@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Annual Computer Science Symposium">
+    <title>Annual CS Symposium</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <a href="#home" class="logo">Code & Beyond</a>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#speaker">Speaker</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#register">Register</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home">
+        <div class="hero-content">
+            <p class="eyebrow">ANNUAL COMPUTER SCIENCE SYMPOSIUM</p>
+
+            <h1>Ideas That Shape <span>Tomorrow.</span></h1>
+
+            <p class="hero-text">
+                Explore technology, discover new possibilities, and connect
+                with the next generation of innovators.
+            </p>
+
+            <a href="#register" class="button">Reserve Your Spot →</a>
+        </div>
+
+        <div class="hero-decoration">✦</div>
+        <div class="hero-circle"></div>
+    </header>
+
+    <main>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">WELCOME TO THE FUTURE</p>
+                <h2>Where Curiosity Meets Innovation</h2>
+                <p>
+                    A gathering of creative minds, emerging technologies,
+                    and fresh ideas that inspire change.
+                </p>
+            </div>
+
+            <img
+                src="images/symposium-image.png"
+                alt="Illustration for the Annual Computer Science Symposium"
+                class="event-image"
+            >
+
+            <div class="about-content">
+                <h3>Why Join Us?</h3>
+
+                <p>
+                    The Annual Computer Science Symposium brings students,
+                    developers, and technology enthusiasts together to
+                    learn, collaborate, and share ideas.
+                </p>
+
+                <ol>
+                    <li>Learn about emerging technologies and AI.</li>
+                    <li>Connect with students and industry professionals.</li>
+                    <li>Explore projects, research, and career opportunities.</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Speaker Section -->
+        <section id="speaker" class="section speaker-section">
+            <div class="section-heading">
+                <p class="eyebrow">MEET THE MINDS</p>
+                <h2>Featured Speaker</h2>
+                <p>Ideas become powerful when they are shared.</p>
+            </div>
+
+            <div class="speaker-card">
+                <span class="badge">KEYNOTE</span>
+
+                <div class="speaker-icon">✧</div>
+
+                <h3>Dr. Ayesha Rahman</h3>
+                <p class="speaker-role">AI Researcher & Technology Innovator</p>
+
+                <p>
+                    Discover how artificial intelligence and innovative
+                    thinking are shaping the future of computer science.
+                </p>
+            </div>
+        </section>
+
+        <!-- Schedule Section -->
+        <section id="schedule" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">PLAN YOUR DAY</p>
+                <h2>Event Schedule</h2>
+                <p>A day filled with learning, creativity, and collaboration.</p>
+            </div>
+
+            <div class="event-cards">
+                <div class="event-card">
+                    <span class="card-number">01</span>
+                    <h3>Opening Ceremony</h3>
+                    <p>Welcome address and introduction to the symposium.</p>
+                </div>
+
+                <div class="event-card">
+                    <span class="card-number">02</span>
+                    <h3>Keynote Session</h3>
+                    <p>Explore the future of artificial intelligence.</p>
+                </div>
+
+                <div class="event-card">
+                    <span class="card-number">03</span>
+                    <h3>Project Showcase</h3>
+                    <p>Discover student projects and creative solutions.</p>
+                </div>
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <caption>Official Event Timetable</caption>
+
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Session</th>
+                            <th>Location</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>09:00 AM</td>
+                            <td>Opening Ceremony</td>
+                            <td>Main Auditorium</td>
+                        </tr>
+
+                        <tr>
+                            <td>10:00 AM</td>
+                            <td>AI Keynote</td>
+                            <td>Conference Hall</td>
+                        </tr>
+
+                        <tr>
+                            <td>11:30 AM</td>
+                            <td>Technical Workshop</td>
+                            <td>Computer Lab</td>
+                        </tr>
+
+                        <tr>
+                            <td>01:00 PM</td>
+                            <td>Project Exhibition</td>
+                            <td>Innovation Hall</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Registration Section -->
+        <section id="register" class="section register-section">
+            <div class="section-heading">
+                <p class="eyebrow">YOUR NEXT CHAPTER STARTS HERE</p>
+                <h2>Be Part of Something Brilliant</h2>
+                <p>Complete the form below to register your interest.</p>
+            </div>
+
+            <form action="#" method="post">
+
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your full name"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="email">University Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="name@comsats.edu.pk"
+                        pattern="[a-zA-Z0-9._%+-]+@comsats\.edu\.pk"
+                        title="Use your university email ending in @comsats.edu.pk"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="semester">Current Semester</label>
+                    <select id="semester" name="semester" required>
+                        <option value="">Select your semester</option>
+                        <option value="1">1st Semester</option>
+                        <option value="2">2nd Semester</option>
+                        <option value="3">3rd Semester</option>
+                        <option value="4">4th Semester</option>
+                        <option value="5">5th Semester</option>
+                        <option value="6">6th Semester</option>
+                        <option value="7">7th Semester</option>
+                        <option value="8">8th Semester</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input
+                        type="number"
+                        id="age"
+                        name="age"
+                        min="16"
+                        max="60"
+                        placeholder="Enter your age"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="reason">Why do you want to attend?</label>
+                    <textarea
+                        id="reason"
+                        name="reason"
+                        rows="4"
+                        placeholder="Share your interests and expectations..."
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="button">Submit Registration →</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p class="footer-logo">Code & Beyond</p>
+        <p>Annual Computer Science Symposium</p>
+        <p class="copyright">© 2026 CS Symposium. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
