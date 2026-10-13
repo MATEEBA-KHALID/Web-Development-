@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>CUI Job Application Form</title>
+<style>
+body{font-family:Arial,sans-serif;background:#f1f3f5;color:#222;margin:0;padding:22px}.sheet{max-width:900px;margin:auto;background:#fff;border:2px solid #222;padding:22px}h1,h2{text-align:center;margin:6px}.top{display:flex;align-items:center;justify-content:space-between;border-bottom:2px solid #222;padding-bottom:16px}.logo{width:75px;height:75px;object-fit:contain}.photo{border:1px solid #555;padding:18px 8px;text-align:center;font-size:12px;width:110px}.section{border:1px solid #555;padding:14px;margin-top:14px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.field{display:flex;flex-direction:column;gap:5px}input,select,textarea{font:inherit;padding:8px;border:1px solid #aaa}label{font-size:13px;font-weight:bold}button{padding:10px 20px;background:#073b66;color:white;border:0;cursor:pointer}@media(max-width:600px){.grid{grid-template-columns:1fr}.top{gap:10px;flex-wrap:wrap}}
+</style></head>
+<body><main class="sheet">
+<div class="top"><img class="logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/COMSATS_University_Islamabad_logo.png/200px-COMSATS_University_Islamabad_logo.png" alt="COMSATS logo"><div><h1>COMSATS University Islamabad</h1><h2>Non-Faculty Job Application Form</h2><p style="text-align:center">Please complete all applicable fields</p></div><div class="photo">Affix recent<br>photograph<br>(passport size)</div></div>
+<form action="#" method="post" enctype="multipart/form-data">
+<div class="section"><h3>Position Details</h3><div class="grid">
+<div class="field"><label for="position">1. Post applied for *</label><input id="position" name="position" required></div>
+<div class="field"><label for="department">2. Department *</label><input id="department" name="department" required></div>
+<div class="field"><label>3. Campus *</label><label><input type="radio" name="campus" value="Sahiwal" required> Sahiwal</label><label><input type="radio" name="campus" value="Islamabad"> Islamabad</label><label><input type="radio" name="campus" value="Attock"> Attock</label></div>
+<div class="field"><label for="photo">Recent photograph</label><input id="photo" type="file" name="photo" accept="image/*"></div>
+</div></div>
+<div class="section"><h3>Personal Information</h3><div class="grid">
+<div class="field"><label for="fullname">4. Name in full (CAPITAL LETTERS) *</label><input id="fullname" name="fullname" required></div>
+<div class="field"><label for="father">5. Father's name *</label><input id="father" name="father" required></div>
+<div class="field"><label for="dob">Date of birth *</label><input id="dob" name="dob" type="date" required></div>
+<div class="field"><label for="gender">Gender</label><select id="gender" name="gender"><option value="">Select</option><option>Female</option><option>Male</option><option>Prefer not to say</option></select></div>
+<div class="field"><label for="cnic">CNIC / B-Form number</label><input id="cnic" name="cnic" placeholder="XXXXX-XXXXXXX-X"></div>
+<div class="field"><label for="nationality">Nationality</label><input id="nationality" name="nationality" value="Pakistani"></div>
+<div class="field"><label for="office">Telephone (office)</label><input id="office" name="office" type="tel"></div>
+<div class="field"><label for="residence">Telephone (residence)</label><input id="residence" name="residence" type="tel"></div>
+<div class="field"><label for="phone">Mobile number *</label><input id="phone" name="phone" type="tel" required></div>
+<div class="field"><label for="email">Email address *</label><input id="email" name="email" type="email" required></div>
+<div class="field"><label for="address">Postal address *</label><textarea id="address" name="address" rows="2" required></textarea></div>
+<div class="field"><label for="domicile">Domicile</label><input id="domicile" name="domicile"></div>
+</div></div>
+<div class="section"><h3>12. Academic Record</h3><p>Start with the highest qualification and list qualifications in descending order.</p><table border="1" cellpadding="7" cellspacing="0" style="width:100%;border-collapse:collapse"><thead><tr><th>Degree held</th><th>Year of award</th><th>Field</th><th>Board / University</th><th>Grade / Division</th></tr></thead><tbody><tr><td><input name="degree1" aria-label="Degree held"></td><td><input name="year1" aria-label="Year of award"></td><td><input name="field1" aria-label="Field"></td><td><input name="university1" aria-label="Board or university"></td><td><input name="grade1" aria-label="Grade or division"></td></tr><tr><td><input name="degree2" aria-label="Second degree"></td><td><input name="year2" aria-label="Second year"></td><td><input name="field2" aria-label="Second field"></td><td><input name="university2" aria-label="Second university"></td><td><input name="grade2" aria-label="Second grade"></td></tr><tr><td><input name="degree3" aria-label="Third degree"></td><td><input name="year3" aria-label="Third year"></td><td><input name="field3" aria-label="Third field"></td><td><input name="university3" aria-label="Third university"></td><td><input name="grade3" aria-label="Third grade"></td></tr></tbody></table><div class="grid" style="margin-top:12px">
+<div class="field"><label for="qualification">Highest qualification</label><input id="qualification" name="qualification"></div>
+<div class="field"><label for="institution">Institution</label><input id="institution" name="institution"></div>
+<div class="field"><label for="year">Year completed</label><input id="year" name="year" type="number" min="1950" max="2035"></div>
+<div class="field"><label for="marks">Marks / CGPA</label><input id="marks" name="marks"></div>
+</div></div>
+<div class="section"><h3>13. Employment History</h3><p>Start with your most recent employment.</p><table border="1" cellpadding="7" cellspacing="0" style="width:100%;border-collapse:collapse"><thead><tr><th>Name of organization</th><th>Post / pay scale</th><th>Job profile</th><th>Period (from–to)</th></tr></thead><tbody><tr><td><input name="org1" aria-label="Organization"></td><td><input name="post1" aria-label="Post and pay scale"></td><td><input name="profile1" aria-label="Job profile"></td><td><input name="period1" aria-label="Period"></td></tr><tr><td><input name="org2" aria-label="Second organization"></td><td><input name="post2" aria-label="Second post"></td><td><input name="profile2" aria-label="Second job profile"></td><td><input name="period2" aria-label="Second period"></td></tr></tbody></table><div class="grid" style="margin-top:12px">
+<div class="field"><label for="employer">Current / last employer</label><input id="employer" name="employer"></div>
+<div class="field"><label for="jobtitle">Designation</label><input id="jobtitle" name="jobtitle"></div>
+<div class="field"><label for="experience">Total experience</label><input id="experience" name="experience" placeholder="e.g. 2 years"></div>
+<div class="field"><label for="cv">Upload CV (PDF)</label><input id="cv" name="cv" type="file" accept=".pdf"></div>
+</div></div>
+<div class="section"><h3>Declaration</h3><p>I declare that the information provided is true and complete to the best of my knowledge. I understand that incorrect information may affect my application.</p><label><input type="checkbox" required> I agree to this declaration. *</label><div class="grid" style="margin-top:12px"><div class="field"><label for="signature">Applicant name / signature</label><input id="signature" name="signature"></div><div class="field"><label for="date">Date</label><input id="date" name="date" type="date"></div></div></div>
+<p style="text-align:center"><button type="submit">Submit Application</button> <button type="reset" style="background:#666">Reset Form</button></p>
+<p style="font-size:12px">Student practice template only. This page does not send data to CUI or submit an actual job application. Compare the fields with the <a href="https://comsats.edu.pk/NEFiles/NON_faculty_job_application_form.pdf" target="_blank" rel="noopener">official CUI Non-Faculty Job Application Form (PDF)</a> before final submission.</p>
+</form></main></body></html>
